@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>"Pendataan Kontak Orang Tua / Wali Siswa Kelas X"</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #ffffff;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Iframe dengan izin autoplay suara -->
+  <iframe id="webAppFrame" src="" allow="autoplay; encrypted-media"></iframe>
+
+  <script>
+    const baseUrl = "https://script.google.com/macros/s/AKfycbwleXR-O5Xi6NZLBHAudjM8wOvE21cv6eIxdbAMzmoaLZMBhTuT7TrDk_tuL4GCSWBE/exec";
+    const urlParams = window.location.search;
+    document.getElementById("webAppFrame").src = baseUrl + urlParams;
+  </script>
+
+</body>
+</html>
